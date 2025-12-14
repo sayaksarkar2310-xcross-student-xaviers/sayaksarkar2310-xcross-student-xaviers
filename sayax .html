@@ -1,0 +1,283 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sayak Sarkar | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#f4f7fb;
+  --card:#ffffff;
+  --text:#222;
+  --accent:#203a43;
+}
+body.dark{
+  --bg:#121212;
+  --card:#1e1e1e;
+  --text:#eaeaea;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;}
+body{background:var(--bg);color:var(--text);scroll-behavior:smooth;}
+
+nav{
+  position:sticky;top:0;z-index:1000;
+  background:linear-gradient(135deg,#0f2027,#203a43);
+  padding:15px 8%;
+  display:flex;justify-content:space-between;align-items:center;
+  color:#fff;
+}
+nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:500;}
+.toggle{cursor:pointer;border:1px solid #fff;padding:4px 12px;border-radius:20px;font-size:0.9rem;}
+
+header{
+  padding:70px 8%;
+  display:flex;gap:40px;flex-wrap:wrap;align-items:center;
+}
+header img{
+  width:190px;height:190px;border-radius:50%;
+  object-fit:cover;border:5px solid var(--accent);
+}
+
+section{padding:60px 8%;}
+h2{margin-bottom:20px;color:var(--accent);}
+.card{
+  background:var(--card);
+  padding:28px;border-radius:16px;
+  box-shadow:0 18px 35px rgba(0,0,0,0.12);
+  margin-bottom:25px;
+  animation:fadeUp 0.6s ease;
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(25px)}to{opacity:1}}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;}
+
+.badge{
+  display:inline-block;
+  background:var(--accent);
+  color:#fff;
+  padding:6px 14px;
+  border-radius:20px;
+  margin:6px 6px 0 0;
+  font-size:0.85rem;
+}
+
+details{
+  background:var(--card);
+  padding:18px;
+  border-radius:12px;
+  margin-bottom:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+a.btn{
+  display:inline-block;
+  margin-top:12px;
+  background:var(--accent);
+  color:#fff;
+  padding:12px 26px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+#topBtn{
+  position:fixed;bottom:30px;right:30px;
+  background:var(--accent);
+  color:#fff;border:none;
+  padding:12px 16px;border-radius:50%;
+  display:none;cursor:pointer;
+}
+
+footer{
+  background:var(--accent);
+  color:#fff;text-align:center;
+  padding:22px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <strong>Sayak Sarkar</strong>
+  <div>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#projects">Projects</a>
+    <a href="#volunteer">Volunteer</a>
+    <a href="#contact">Contact</a>
+    <span class="toggle" onclick="toggleDark()">Dark</span>
+  </div>
+</nav>
+
+<header id="about">
+  <img src="photo.jpg" alt="Sayak Sarkar">
+  <div>
+    <h1>Sayak Sarkar</h1>
+    <p>
+      BMS (Hons.) – 2nd Year Student<br>
+      St. Xavier’s University, Kolkata<br>
+      <strong>CGPA: 9.6 / 10</strong><br><br>
+      📧 sayaksarkar2310@gmail.com<br>
+      📞 +91-9832604718<br>
+      🔗 <a href="https://www.linkedin.com/in/sayaksarkar8" target="_blank">linkedin.com/in/sayaksarkar8</a><br><br>
+      <a href="resume.pdf" class="btn" download>Download Resume (PDF)</a>
+    </p>
+  </div>
+</header>
+
+<section>
+<div class="card">
+Motivated and detail-oriented management student with strong academic performance and
+practical exposure to digital marketing, analytics, finance, and AI through
+industry-recognized simulations by Google, Deloitte, Fidelity, Tata Group, AWS,
+Microsoft, Citi, and government initiatives. Actively seeking short-term virtual
+internships in business strategy, marketing, and data-driven decision-making.
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="grid">
+<div class="card">
+<strong>Bachelor of Management Studies (Hons.)</strong><br>
+St. Xavier’s University, Kolkata<br>
+Aug 2024 – Present<br>
+CGPA: 9.6 / 10
+</div>
+<div class="card">
+<strong>Higher Secondary – Commerce (Maths & IT)</strong><br>
+Burnpur Riverside School, West Bengal<br>
+Score: 89%
+</div>
+<div class="card">
+<strong>Secondary Education – Class X</strong><br>
+Burnpur Riverside School, West Bengal<br>
+Score: 95%
+</div>
+</div>
+</section>
+
+<section id="certifications">
+<h2>Certifications</h2>
+
+<details><summary>Google Digital Academy – Fundamentals of Digital Marketing</summary>
+SEO, Google Ads, Analytics, Content Marketing (June 2025 – June 2035)
+</details>
+
+<details><summary>Deloitte Australia – Data Analytics Job Simulation</summary>
+Business insights, data interpretation (June 2025)
+</details>
+
+<details><summary>Fidelity International – Investment Management Simulation</summary>
+Portfolio management, financial modeling (June 2025 – June 2034)
+</details>
+
+<details><summary>Microsoft – Introduction to AI Concepts</summary>
+AI, IT fundamentals, technical writing (June 2025)
+</details>
+
+<details><summary>Amazon Web Services – Introduction to Generative AI</summary>
+AI concepts, competitive thinking (June 2025)
+</details>
+
+<details><summary>NSW Government – Marketing & Communication Simulation</summary>
+Data warehousing, communication strategy (June 2025)
+</details>
+
+<details><summary>Tata Group – GenAI Powered Analytics Simulation</summary>
+Data analysis and AI-assisted insights (June 2025)
+</details>
+
+<details><summary>Citi – Markets: Quantitative Analysis Program (Forage)</summary>
+Algorithmic trading, quantitative modeling
+</details>
+
+<details><summary>Saylor Academy – Customer Service Certificate</summary>
+CRM, complaint resolution, communication skills
+</details>
+
+<details><summary>ICSI – Commerce Olympiad</summary>
+Business awareness, governance, time management (Participant)
+</details>
+
+<details><summary>Government of India – Integrity Pledge (CVC)</summary>
+Ethics, accountability, civic responsibility
+</details>
+
+<details><summary>ADCA – Combat Computer Education Centre</summary>
+MS Office, typing, file management
+</details>
+
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card">
+<strong>Google Digital Marketing Capstone</strong>
+<p>Developed an end-to-end digital marketing strategy for a simulated small business
+using SEO, social media campaigns, content marketing, and Google Ads.</p>
+</div>
+<div class="card">
+<strong>Deloitte Business Analytics Simulation</strong>
+<p>Interpreted internal datasets to identify performance bottlenecks and proposed
+data-backed strategic recommendations.</p>
+</div>
+</div>
+</section>
+
+<section id="volunteer">
+<h2>Volunteer Experience</h2>
+<div class="grid">
+<div class="card">
+<strong>St. Jude India ChildCare Centres</strong><br>
+Student Volunteer | Newtown, Kolkata<br>
+Sep – Dec 2024
+<p>Conducted educational and interactive sessions for children undergoing cancer
+treatment and supported families with empathy.</p>
+</div>
+<div class="card">
+<strong>Asansol Angikar Foundation</strong><br>
+Student Volunteer | Asansol, West Bengal<br>
+Aug – Dec 2024
+<p>Collaborated in hygiene and education awareness campaigns and community outreach.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Achievements & Awards</h2>
+<div class="card">
+• Gold Medal – Academic Excellence, St. Xavier’s University<br>
+• Silver Medal – Tug-of-War, Chrysalis’25 Sports Event<br>
+• Participant – Youth Parliament (Ministry of Parliamentary Affairs, Govt. of India)<br>
+• Best Student – Inter-School Debate (Hubs of Learning)
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+📧 sayaksarkar2310@gmail.com<br>
+📞 +91-9832604718<br>
+🔗 linkedin.com/in/sayaksarkar8
+</div>
+</section>
+
+<footer>
+© 2025 Sayak Sarkar | Hosted on GitHub Pages
+</footer>
+
+<button id="topBtn" onclick="scrollTo(0,0)">↑</button>
+
+<script>
+function toggleDark(){document.body.classList.toggle('dark');}
+window.onscroll=()=>{topBtn.style.display=scrollY>300?'block':'none';}
+</script>
+
+</body>
+</html>
